@@ -116,15 +116,16 @@
 
     <section id="contato" class="container">
         <h2>Contato</h2>
-        <p>Você pode me encontrar no GitHub ou LinkedIn.</p>
+        <p>Você pode me encontrar no GitHub, LinkedIn, Instagram ou enviar um e-mail diretamente para:</p>
         <ul class="social">
-            <li><a href="https://www.instagram.com/t.victor07/">Instagram</</a></li>
+            <li><a href="https://www.instagram.com/t.victor07/">Instagram</a></li>
             <li><a href="https://github.com/Thiago-Victor">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/thiago-victor-162988350/">LinkedIn</a></li>
         </ul>
+        <p>Email: <a href="mailto:thiagovictor@exemplo.com">thiagovictor@exemplo.com</a></p>
     </section>
     
-     <style>
+    <style>
         /* style.css - Tema escuro com destaque em vermelho escuro */
 
 body {
@@ -241,144 +242,4 @@ h2 {
 
 .relogio {
     text-align: center;
-    margin-top: 10px;
-}
-
-.relogio p {
-    font-size: 3em;
-    font-weight: bold;
-    color: #FF4C4C;
-    text-align: center;
-}
-
-.botoes button {
-    background-color: #8B0000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.botoes button:hover {
-    background-color: #FF4C4C;
-    box-shadow: 0 0 10px #FF4C4C;
-}
-
-.social {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-/*     flex-wrap: wrap; */
-    /* justify-content: center; */
-}
-
-.social li a {
-    color: #FF4C4C;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #1f1f1f;
-    text-align: center;
-    padding: 10px;
-    color: #999;
-    align-items: center;
-}
-
-.icon {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 30px;
-    height: 30px;
-}
-
-/* MEDIA QUERIES - RESPONSIVIDADE */
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .nav-links li {
-        width: 100%;
-    }
-
-    .relogio p {
-        font-size: 2em;
-    }
-
-    .botoes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .botoes button {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .icon {
-        margin: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .relogio p {
-        font-size: 1.8em;
-    }
-}
-     </style>
-     <script>
-        // relógio.js - Relógio Funcional em JavaScript
-function atualizarRelogio() {
-    const agora = new Date();
-    let horas = agora.getHours();
-    const minutos = agora.getMinutes().toString().padStart(2, '0');
-    const segundos = agora.getSeconds().toString().padStart(2, '0');
-
-    // Converte para formato de 12 horas
-    let periodo = 'AM';
-    if (horas >= 12) {
-        periodo = 'PM';
-        if (horas > 12) horas -= 12;
-    }
-    horas = horas.toString().padStart(2, '0');
-
-    const horarioFormatado = `${horas}:${minutos}:${segundos} ${periodo}`;
-    document.getElementById('clockValue').textContent = horarioFormatado;
-}
-
-setInterval(atualizarRelogio, 1000);
-atualizarRelogio();  // Chama imediatamente ao carregar a página
-
-     </script>
-    <footer>
-        <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
-    </footer>
-
-    <!-- <script src="/assets/script/script.js"></script> -->
-</body>
-
-</html>
+    margin
