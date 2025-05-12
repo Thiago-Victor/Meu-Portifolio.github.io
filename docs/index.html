@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional</title>
+    <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Thiago Victor </h1>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section class="container" id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>
+            Olá! Meu nome é <strong>Thiago Victor</strong> e estou no 3º ano do curso técnico em Informática na
+            <strong>Escola Profissional Luiza de Teodoro Vieira</strong>. Desde que entrei no mundo da tecnologia,
+            venho desenvolvendo projetos e aprendendo de forma prática e constante, sempre com foco em me tornar um
+            <strong>desenvolvedor full-stack</strong>.
+        </p>
+        <p>
+            Tenho experiência em linguagens como <strong>Java, JavaScript e Python</strong>, além de domínio em
+            <strong>banco de dados com PostgreSQL</strong>. Já desenvolvi projetos como uma <em>calculadora</em>,
+            um <em>gerador de senhas fortes</em> em Python e até um <em>carrinho seguidor de linha que desvia de
+                obstáculos</em>, aplicando lógica de programação e eletrônica.
+        </p>
+        <p>
+            Atualmente, estou ampliando meu conhecimento com um curso de <strong>Cibersegurança do Google pela
+                Coursera</strong>
+            e já conquistei um certificado da <strong>Huawei Cloud Services</strong>. Estou sempre em busca de novos
+            desafios
+            que me ajudem a crescer como profissional e aprimorar minhas habilidades tanto no <strong>front-end</strong>
+            quanto
+            no <strong>back-end</strong>.
+        </p>
+        <p>
+            Sou comprometido, curioso e gosto de aprender com projetos reais. Meu objetivo é evoluir cada vez mais e
+            contribuir
+            para soluções que façam a diferença.
+        </p>
+    </section>
+    <section id="habilidades" class="container">
+        <h2>Habilidades</h2>
+        <ul class="skills">
+            <li>
+                <img src="/assets/img/javaicon.png" class="icon">
+            </li>
+            <li>
+                <img src="/assets/img/pythonicon-removebg-preview.png" class="icon">
+            </li>
+            <li>
+                <img src="/assets/img/javascripticon.png" class="icon">
+            </li>
+            <li>
+                <img src="/assets/img/htmlicon-removebg-preview.png" class="icon">
+            </li>
+            <li>
+                <img src="/assets/img/cssicon.png" class="icon">
+            </li>
+            <li>
+                <img src="/assets/img/pgadminicon-removebg-preview.png" class="icon"><br>
+            </li>
+        </ul>
+    </section>
+
+    <section id="projetos" class="container">
+        <h2>Projetos</h2>
+
+        <h3>Python</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Calculadora</h4>
+                <p>Calculadora simples feita em Python com operações básicas.</p>
+                <a href="#">Ver Código</a>
+            </div>
+            <div class="card">
+                <h4>Gerador de Senhas Fortes</h4>
+                <p>Gera senhas seguras com opção de tamanho e complexidade.</p>
+                <a href="#">Ver Código</a>
+            </div>
+        </div>
+
+        <h3>JavaScript</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Relógio Funcional</h4>
+                <p>Relógio digital com atualização em tempo real.</p>
+                <div class="relogio">
+                    <p id="clockValue">00:00:00</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Java</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Concessionária (Java + WindowBuilder)</h4>
+                <p>Criação de um sistema de uma concessionária junto dos meus colegas,fizemos pensando em automatizar a
+                    venda,estoque e apresentação dos veiculos</p>
+                <a href="https://github.com/Thiago-Victor/concessionaria-projeto.git">Ver Código</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="container">
+        <h2>Contato</h2>
+        <p>Você pode me encontrar no GitHub ou LinkedIn.</p>
+        <ul class="social">
+            <li><a href="https://github.com/Thiago-Victor">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/thiago-victor-162988350/">LinkedIn</a></li>
+        </ul>
+    </section>
+     <style>
+        /* style.css - Tema escuro com destaque em vermelho escuro */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 10px #8B0000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    color: #FF4C4C;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #FF4C4C;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #FF4C4C;
+    border-bottom: 2px solid #FF4C4C;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills li {
+    background-color: #2a2a2a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #f1f1f1;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 5px #000;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #FF4C4C, 0 0 25px #FF4C4C;
+    border-color: #FF4C4C;
+}
+
+.card h4 {
+    margin-top: 0;
+    color: #FF4C4C;
+}
+
+.card a {
+    color: #FF4C4C;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.relogio {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.relogio p {
+    font-size: 3em;
+    font-weight: bold;
+    color: #FF4C4C;
+    text-align: center;
+}
+
+.botoes button {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botoes button:hover {
+    background-color: #FF4C4C;
+    box-shadow: 0 0 10px #FF4C4C;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.social li a {
+    color: #FF4C4C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 10px;
+    color: #999;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+/* MEDIA QUERIES - RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .relogio p {
+        font-size: 2em;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .icon {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .relogio p {
+        font-size: 1.8em;
+    }
+}
+     </style>
+     <script>
+        // relógio.js - Relógio Funcional em JavaScript
+function atualizarRelogio() {
+    const agora = new Date();
+    let horas = agora.getHours();
+    const minutos = agora.getMinutes().toString().padStart(2, '0');
+    const segundos = agora.getSeconds().toString().padStart(2, '0');
+
+    // Converte para formato de 12 horas
+    let periodo = 'AM';
+    if (horas >= 12) {
+        periodo = 'PM';
+        if (horas > 12) horas -= 12;
+    }
+    horas = horas.toString().padStart(2, '0');
+
+    const horarioFormatado = `${horas}:${minutos}:${segundos} ${periodo}`;
+    document.getElementById('clockValue').textContent = horarioFormatado;
+}
+
+setInterval(atualizarRelogio, 1000);
+atualizarRelogio();  // Chama imediatamente ao carregar a página
+
+     </script>
+    <footer>
+        <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- <script src="/assets/script/script.js"></script> -->
+</body>
+
+</html>
