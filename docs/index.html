@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <h1 class="logo">Thiago Victor </h1>
+            <h1 class="logo">Thiago Victor</h1>
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre Mim</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
@@ -51,26 +51,27 @@
             para soluções que façam a diferença.
         </p>
     </section>
+
     <section id="habilidades" class="container">
         <h2>Habilidades</h2>
         <ul class="skills">
             <li>
-                <img src="javaicon.png" class="icon">
+                <img src="javaicon.png" alt="Ícone Java" class="icon">
             </li>
             <li>
-                <img src="pythonicon-removebg-preview.png" class="icon">
+                <img src="pythonicon-removebg-preview.png" alt="Ícone Python" class="icon">
             </li>
             <li>
-                <img src="javascripticon.png" class="icon">
+                <img src="javascripticon.png" alt="Ícone JavaScript" class="icon">
             </li>
             <li>
-                <img src="htmlicon-removebg-preview.png" class="icon">
+                <img src="htmlicon-removebg-preview.png" alt="Ícone HTML" class="icon">
             </li>
             <li>
-                <img src="cssicon.png" class="icon">
+                <img src="cssicon.png" alt="Ícone CSS" class="icon">
             </li>
             <li>
-                <img src="pgadminicon-removebg-preview.png" class="icon"><br>
+                <img src="pgadminicon-removebg-preview.png" alt="Ícone PostgreSQL" class="icon">
             </li>
         </ul>
     </section>
@@ -107,8 +108,8 @@
         <div class="cards">
             <div class="card">
                 <h4>Concessionária (Java + WindowBuilder)</h4>
-                <p>Criação de um sistema de uma concessionária junto dos meus colegas,fizemos pensando em automatizar a
-                    venda,estoque e apresentação dos veiculos</p>
+                <p>Criação de um sistema de uma concessionária junto dos meus colegas, fizemos pensando em automatizar a
+                    venda, estoque e apresentação dos veículos.</p>
                 <a href="https://github.com/Thiago-Victor/concessionaria-projeto.git">Ver Código</a>
             </div>
         </div>
@@ -124,122 +125,97 @@
         </ul>
         <p>Email: <a href="mailto:thiagovictor@exemplo.com">thiagovictor@exemplo.com</a></p>
     </section>
-    
+
     <style>
         /* style.css - Tema escuro com destaque em vermelho escuro */
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #f1f1f1;
-}
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+        }
 
-header {
-    background-color: #1f1f1f;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 0 10px #8B0000;
-}
+        header {
+            background-color: #1f1f1f;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 0 10px #8B0000;
+        }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
-    flex-wrap: wrap;
-}
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
 
-.logo {
-    font-size: 24px;
-    color: #FF4C4C;
-    font-weight: bold;
-}
+        .logo {
+            font-size: 24px;
+            color: #FF4C4C;
+            font-weight: bold;
+        }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #f1f1f1;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
+        .nav-links li a {
+            text-decoration: none;
+            color: #f1f1f1;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
 
-.nav-links li a:hover {
-    color: #FF4C4C;
-}
+        .nav-links li a:hover {
+            color: #FF4C4C;
+        }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
-}
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
 
-h2 {
-    color: #FF4C4C;
-    border-bottom: 2px solid #FF4C4C;
-    display: inline-block;
-    margin-bottom: 20px;
-}
+        h2 {
+            color: #FF4C4C;
+            border-bottom: 2px solid #FF4C4C;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
 
-.skills {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
+        .skills {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
 
-.skills li {
-    background-color: #2a2a2a;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #f1f1f1;
-}
+        .skills li {
+            background-color: #2a2a2a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #f1f1f1;
+        }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
 
-.card {
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #333;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 5px #000;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px #FF4C4C, 0 0 25px #FF4C4C;
-    border-color: #FF4C4C;
-}
-
-.card h4 {
-    margin-top: 0;
-    color: #FF4C4C;
-}
-
-.card a {
-    color: #FF4C4C;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.relogio {
-    text-align: center;
-    margin
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            transition: transform 0.3
