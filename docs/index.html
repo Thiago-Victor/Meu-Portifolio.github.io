@@ -127,11 +127,13 @@
      <style>
         /* style.css - Tema escuro com destaque em vermelho escuro */
 
+/* style.css - Tema escuro com destaque em vermelho escuro */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #121212;
     color: #f1f1f1;
+    line-height: 1.6;
 }
 
 header {
@@ -154,7 +156,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 26px;
     color: #FF4C4C;
     font-weight: bold;
 }
@@ -165,6 +167,8 @@ header {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links li a {
@@ -189,20 +193,29 @@ h2 {
     border-bottom: 2px solid #FF4C4C;
     display: inline-block;
     margin-bottom: 20px;
+    font-size: 2em;
 }
 
 .skills {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
+    padding: 0;
+    justify-content: center;
 }
 
 .skills li {
     background-color: #2a2a2a;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
 }
 
 .cards {
@@ -245,10 +258,15 @@ h2 {
 }
 
 .relogio p {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     color: #FF4C4C;
-    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .botoes button {
@@ -273,32 +291,29 @@ h2 {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    padding: 0;
 }
 
 .social li a {
     color: #FF4C4C;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social li a:hover {
+    color: #f1f1f1;
 }
 
 footer {
     background-color: #1f1f1f;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     color: #999;
-    align-items: center;
+    font-size: 0.9em;
 }
 
-.icon {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 30px;
-    height: 30px;
-}
-
-/* MEDIA QUERIES - RESPONSIVIDADE */
-
+/* Responsividade */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -307,6 +322,7 @@ footer {
 
     .nav-links {
         flex-direction: column;
+        align-items: flex-start;
         width: 100%;
         gap: 10px;
         margin-top: 10px;
@@ -320,19 +336,13 @@ footer {
         font-size: 2em;
     }
 
-    .botoes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .botoes button {
-        width: 100%;
-        max-width: 250px;
-    }
-
     .icon {
-        margin: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .skills {
+        justify-content: center;
     }
 }
 
@@ -342,13 +352,26 @@ footer {
     }
 
     .logo {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .relogio p {
-        font-size: 1.8em;
+        font-size: 1.5em;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h4 {
+        font-size: 1.1em;
+    }
+
+    .card p {
+        font-size: 0.95em;
     }
 }
+
      </style>
      <script>
         // relógio.js - Relógio Funcional em JavaScript
